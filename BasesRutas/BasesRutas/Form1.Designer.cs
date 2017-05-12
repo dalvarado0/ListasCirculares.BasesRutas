@@ -44,11 +44,13 @@
             this.txbReport = new System.Windows.Forms.TextBox();
             this.txbDelate = new System.Windows.Forms.TextBox();
             this.txbBaseTour = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbTimeToStart = new System.Windows.Forms.Label();
+            this.lbTimeToFinish = new System.Windows.Forms.Label();
             this.txbStart = new System.Windows.Forms.TextBox();
             this.txbFinish = new System.Windows.Forms.TextBox();
             this.lbReport = new System.Windows.Forms.Label();
+            this.txbInsert = new System.Windows.Forms.TextBox();
+            this.btnInsert = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnAddFirst
@@ -130,7 +132,7 @@
             // 
             // btnTour
             // 
-            this.btnTour.Location = new System.Drawing.Point(29, 144);
+            this.btnTour.Location = new System.Drawing.Point(29, 138);
             this.btnTour.Margin = new System.Windows.Forms.Padding(4);
             this.btnTour.Name = "btnTour";
             this.btnTour.Size = new System.Drawing.Size(100, 28);
@@ -186,7 +188,7 @@
             // txbReport
             // 
             this.txbReport.Enabled = false;
-            this.txbReport.Location = new System.Drawing.Point(267, 149);
+            this.txbReport.Location = new System.Drawing.Point(267, 143);
             this.txbReport.Margin = new System.Windows.Forms.Padding(4);
             this.txbReport.Multiline = true;
             this.txbReport.Name = "txbReport";
@@ -203,35 +205,35 @@
             // 
             // txbBaseTour
             // 
-            this.txbBaseTour.Location = new System.Drawing.Point(137, 148);
+            this.txbBaseTour.Location = new System.Drawing.Point(137, 142);
             this.txbBaseTour.Margin = new System.Windows.Forms.Padding(4);
             this.txbBaseTour.Name = "txbBaseTour";
             this.txbBaseTour.Size = new System.Drawing.Size(99, 23);
             this.txbBaseTour.TabIndex = 2;
             // 
-            // label1
+            // lbTimeToStart
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(39, 183);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Time to Start";
+            this.lbTimeToStart.AutoSize = true;
+            this.lbTimeToStart.Location = new System.Drawing.Point(39, 177);
+            this.lbTimeToStart.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTimeToStart.Name = "lbTimeToStart";
+            this.lbTimeToStart.Size = new System.Drawing.Size(89, 17);
+            this.lbTimeToStart.TabIndex = 1;
+            this.lbTimeToStart.Text = "Time to Start";
             // 
-            // label2
+            // lbTimeToFinish
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(39, 217);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 17);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Time to Finish";
+            this.lbTimeToFinish.AutoSize = true;
+            this.lbTimeToFinish.Location = new System.Drawing.Point(39, 211);
+            this.lbTimeToFinish.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lbTimeToFinish.Name = "lbTimeToFinish";
+            this.lbTimeToFinish.Size = new System.Drawing.Size(96, 17);
+            this.lbTimeToFinish.TabIndex = 1;
+            this.lbTimeToFinish.Text = "Time to Finish";
             // 
             // txbStart
             // 
-            this.txbStart.Location = new System.Drawing.Point(137, 180);
+            this.txbStart.Location = new System.Drawing.Point(137, 174);
             this.txbStart.Margin = new System.Windows.Forms.Padding(4);
             this.txbStart.Name = "txbStart";
             this.txbStart.Size = new System.Drawing.Size(99, 23);
@@ -239,7 +241,7 @@
             // 
             // txbFinish
             // 
-            this.txbFinish.Location = new System.Drawing.Point(137, 213);
+            this.txbFinish.Location = new System.Drawing.Point(137, 207);
             this.txbFinish.Margin = new System.Windows.Forms.Padding(4);
             this.txbFinish.Name = "txbFinish";
             this.txbFinish.Size = new System.Drawing.Size(99, 23);
@@ -249,19 +251,38 @@
             // 
             this.lbReport.AutoSize = true;
             this.lbReport.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbReport.Location = new System.Drawing.Point(263, 124);
+            this.lbReport.Location = new System.Drawing.Point(263, 118);
             this.lbReport.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbReport.Name = "lbReport";
             this.lbReport.Size = new System.Drawing.Size(55, 16);
             this.lbReport.TabIndex = 1;
             this.lbReport.Text = "Report";
             // 
+            // txbInsert
+            // 
+            this.txbInsert.Location = new System.Drawing.Point(137, 87);
+            this.txbInsert.Name = "txbInsert";
+            this.txbInsert.Size = new System.Drawing.Size(100, 23);
+            this.txbInsert.TabIndex = 9;
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(29, 83);
+            this.btnInsert.Name = "btnInsert";
+            this.btnInsert.Size = new System.Drawing.Size(100, 28);
+            this.btnInsert.TabIndex = 10;
+            this.btnInsert.Text = "&Insert";
+            this.btnInsert.UseVisualStyleBackColor = true;
+            this.btnInsert.Click += new System.EventHandler(this.btnInsert_Click);
+            // 
             // frmPrincipal
             // 
             this.AcceptButton = this.btnAddLast;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(624, 388);
+            this.ClientSize = new System.Drawing.Size(624, 243);
+            this.Controls.Add(this.btnInsert);
+            this.Controls.Add(this.txbInsert);
             this.Controls.Add(this.txbReport);
             this.Controls.Add(this.txbBaseTour);
             this.Controls.Add(this.txbDelate);
@@ -270,9 +291,9 @@
             this.Controls.Add(this.txbStart);
             this.Controls.Add(this.txbTime);
             this.Controls.Add(this.lbReport);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.lbTimeToFinish);
             this.Controls.Add(this.txbNameBase);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lbTimeToStart);
             this.Controls.Add(this.lbTime);
             this.Controls.Add(this.lbBase);
             this.Controls.Add(this.btnTour);
@@ -311,11 +332,13 @@
         private System.Windows.Forms.TextBox txbReport;
         private System.Windows.Forms.TextBox txbDelate;
         private System.Windows.Forms.TextBox txbBaseTour;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbTimeToStart;
+        private System.Windows.Forms.Label lbTimeToFinish;
         private System.Windows.Forms.TextBox txbStart;
         private System.Windows.Forms.TextBox txbFinish;
         private System.Windows.Forms.Label lbReport;
+        private System.Windows.Forms.TextBox txbInsert;
+        private System.Windows.Forms.Button btnInsert;
     }
 }
 

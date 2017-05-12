@@ -65,6 +65,15 @@ namespace BasesRutas
             else
                 txbReport.Text = trip.buscar(txbSearch.Text).ToString();
         }
+
+        private void btnInsert_Click(object sender, EventArgs e)
+        {
+            nueva = new Base();
+            nueva.name = txbNameBase.Text;
+            nueva.time = Convert.ToInt32(txbTime.Text);
+            trip.insertar(nueva,txbInsert.Text);
+            nueva = null;
+        }
         //private void btnAdd_Click(object sender, EventArgs e)
         //{
         //    nueva = new Base();
